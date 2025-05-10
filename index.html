@@ -15,27 +15,43 @@
     font-family: "Poppins", sans-serif;
   }
 </style>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-          'biker-primary': '#E76F51',
-          'biker-primary-bg': 'rgba(231, 111, 81, 0.1)',
-        },
-      },
-    },
-  }
-</script>
-
 </head>
 
 
 <body class="font-poppins">
        
-  <header class="max-w-screen-xl mx-auto">
-
+  <header class="max-w-screen-xl mx-auto pt-3 border-b border-gray-300">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1 items-center">
+          <div class="dropdown ">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 ">
+              <li> <a>Home</a> </li>
+              <li> <a>Shop</a> </li>
+              <li> <a>News</a> </li>
+              <li> <a>Contact</a> </li>
+            </ul>
+          </div>
+          <a class=" text-3xl md:text-4xl font-bold pl-5 "><span class="text-[#E76F51]">Bi</span>ker <span class="text-[#E76F51]">Zo</span>ne</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-2 font-bold">
+              <li> <a>Home</a> </li>
+              <li> <a>Shop</a> </li>
+              <li> <a>News</a> </li>
+              <li> <a>Contact</a> </li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-[#E76F51] text-white px-7">Login</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
 
